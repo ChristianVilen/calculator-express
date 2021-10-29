@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 8000
-const calculate = require("./src/calculate");
+const calculate = require('./src/calculate')
 
 app.post('/', async (req, res) => {
   const result = await calculate(req)
