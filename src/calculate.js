@@ -1,6 +1,6 @@
 const calculate = (expression) => {
   if (!expression.operator) {
-    return console.error('missing operator!')
+    return console.error('missing operator!', expression)
   }
 
   let left = getTypeOf(expression.left)
